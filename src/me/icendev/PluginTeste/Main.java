@@ -1,7 +1,8 @@
 package me.icendev.PluginTeste;
 
-import me.icendev.PluginTeste.commands.chat;
+import me.icendev.PluginTeste.commands.sc;
 import me.icendev.PluginTeste.commands.coins;
+import me.icendev.PluginTeste.events.onplayertag;
 import me.icendev.PluginTeste.events.playerinteractentityevent;
 import me.icendev.PluginTeste.events.playerinteractevent;
 import me.icendev.PluginTeste.events.playerjoinevent;
@@ -28,11 +29,12 @@ public class Main extends JavaPlugin {
     public void onEnable(){
         loadConfig();
         mysqlsetup();
+        getCommand("coins").setExecutor(new coins());
+        getCommand("sc").setExecutor(new sc());
         getServer().getPluginManager().registerEvents(new playerjoinevent(), this);
         getServer().getPluginManager().registerEvents(new playerinteractentityevent(), this);
         getServer().getPluginManager().registerEvents(new playerinteractevent(), this);
-        getCommand("coins").setExecutor(new coins());
-        getCommand("chat").setExecutor(new chat());
+        getServer().getPluginManager().registerEvents(new onplayertag(), this);
         Bukkit.getConsoleSender().sendMessage(pluginName + ChatColor.GREEN + "Ativo com sucesso!");
         //getCommand("ver").setExecutor(new ver());
 
