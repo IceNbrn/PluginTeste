@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="teste@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.2">
+    <root id="1"/>
+    <schema id="2" parent="1" name="teste">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="clinica"/>
+    <schema id="4" parent="1" name="discord"/>
+    <schema id="5" parent="1" name="exile"/>
+    <schema id="6" parent="1" name="forum"/>
+    <schema id="7" parent="1" name="information_schema"/>
+    <schema id="8" parent="1" name="life"/>
+    <schema id="9" parent="1" name="mysql"/>
+    <schema id="10" parent="1" name="pap"/>
+    <schema id="11" parent="1" name="performance_schema"/>
+    <schema id="12" parent="1" name="phpmyadmin"/>
+    <schema id="13" parent="1" name="projeto"/>
+    <schema id="14" parent="1" name="test"/>
+    <schema id="15" parent="1" name="u782375642_fatal"/>
+    <table id="16" parent="2" name="players"/>
+    <column id="17" parent="16" name="UUID">
+      <Position>1</Position>
+      <DataType>varchar(250)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="18" parent="16" name="username">
+      <Position>2</Position>
+      <DataType>varchar(250)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="19" parent="16" name="coins">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="20" parent="16" name="idUser">
+      <Position>4</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <key id="21" parent="16" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>idUser</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>

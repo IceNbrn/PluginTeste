@@ -1,0 +1,10 @@
+name: PluginTeste
+author: IceNdev
+version: 1.0
+main: me.icendev.PluginTeste.Main
+description: Plugin de Teste
+commands:
+  coins:
+    description: Ver coins atuais
+  chat:
+    description: Chat da staff
