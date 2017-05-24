@@ -8,3 +8,5 @@ commands:
     description: Ver coins atuais
   sc:
     description: Chat da staff
+  cage:
+    description: Staff command

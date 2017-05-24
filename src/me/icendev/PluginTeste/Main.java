@@ -1,16 +1,18 @@
 package me.icendev.PluginTeste;
 
+import me.icendev.PluginTeste.commands.cage;
 import me.icendev.PluginTeste.commands.sc;
 import me.icendev.PluginTeste.commands.coins;
-import me.icendev.PluginTeste.events.onplayertag;
-import me.icendev.PluginTeste.events.playerinteractentityevent;
-import me.icendev.PluginTeste.events.playerinteractevent;
-import me.icendev.PluginTeste.events.playerjoinevent;
+import me.icendev.PluginTeste.events.*;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
+import org.bukkit.Material;
 import org.bukkit.command.CommandSender;
+import org.bukkit.configuration.file.FileConfiguration;
+import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;
 
+import java.io.File;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -25,27 +27,38 @@ public class Main extends JavaPlugin {
     public int port;
 
 
-
     public void onEnable(){
         loadConfig();
         mysqlsetup();
         getCommand("coins").setExecutor(new coins());
         getCommand("sc").setExecutor(new sc());
+        getCommand("cage").setExecutor(new cage());
         getServer().getPluginManager().registerEvents(new playerjoinevent(), this);
         getServer().getPluginManager().registerEvents(new playerinteractentityevent(), this);
         getServer().getPluginManager().registerEvents(new playerinteractevent(), this);
-        getServer().getPluginManager().registerEvents(new onplayertag(), this);
+        getServer().getPluginManager().registerEvents(new chatevent(), this);
+        getServer().getPluginManager().registerEvents(new color_chat_sign(), this);
         Bukkit.getConsoleSender().sendMessage(pluginName + ChatColor.GREEN + "Ativo com sucesso!");
         //getCommand("ver").setExecutor(new ver());
 
     }
-
+    public Material parseMat(final String material){
+        Material m=null;
+        try {
+            final int id=Integer.parseInt(material);
+            m=Material.getMaterial(id);
+        }
+        catch (  final NumberFormatException e) {
+            m=Material.matchMaterial(material);
+        }
+        return m;
+    }
     public void mysqlsetup() {
-        host = this.getConfig().getString("host");
-        username = this.getConfig().getString("username");
-        password = this.getConfig().getString("password");
-        database = this.getConfig().getString("database");
-        port = this.getConfig().getInt("port");
+        host = this.getConfig().getString("database.host");
+        username = this.getConfig().getString("database.username");
+        password = this.getConfig().getString("database.password");
+        database = this.getConfig().getString("database.database");
+        port = this.getConfig().getInt("database.port");
         try {
             synchronized (this){
                 if(getConnection() != null && !getConnection().isClosed()){
@@ -66,6 +79,10 @@ public class Main extends JavaPlugin {
     public void onDisable(){
         System.out.println(pluginName + "Desativado!");
 
+    }
+    public void loadFileConf(){
+        File f = new File(getDataFolder(), "blocksToSave.yml");
+        FileConfiguration cfg = YamlConfiguration.loadConfiguration(f);
     }
     public void loadConfig(){
         getConfig().options().copyDefaults(true);
