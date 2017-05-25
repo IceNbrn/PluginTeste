@@ -24,20 +24,28 @@ import java.util.Random;
  */
 public class playerinteractevent implements Listener {
     Main plugin = Main.getPlugin(Main.class);
-    public static void removeInventoryItems(PlayerInventory inv, Material type, int amount) {
+    public int removeInventoryItems(PlayerInventory inv, ItemStack item, int amount) {
+        int Amount = amount;
         for (ItemStack is : inv.getContents()) {
-            if (is != null && is.getType() == type) {
+            if (is != null && is.getType() == item.getType()) {
                 int newamount = is.getAmount() - amount;
+                System.out.print(is.getAmount());
+                System.out.print(amount);
                 if (newamount > 0) {
+                    System.out.print(newamount);
                     is.setAmount(newamount);
                     break;
                 } else {
                     inv.remove(is);
                     amount = -newamount;
-                    if (amount == 0) break;
+                    /*if (amount == 0){
+                        System.out.print("IF: " + amount);
+                        break;
+                    }*/
                 }
             }
         }
+        return Amount-amount;
     }
     @EventHandler
     public void onPlayerInteract1(PlayerInteractEvent e) {
@@ -46,24 +54,51 @@ public class playerinteractevent implements Listener {
             if(b.getType() == Material.WALL_SIGN || b.getType() == Material.SIGN_POST) {
                 Sign sign = (Sign) b.getState();
                 String[] lines = sign.getLines();
+                String[] line1 = lines[1].split(" ");
+                String texto = line1[0];
+                String preco = line1[1];
+                String[] line2 = lines[2].split(" ");
+
+                String idItem = line2[0];
+                String quantidade = line2[1];
+                String idItem1 = "";
+                int idItem2 = 0;
+                boolean idItemContem = false;
                 if(lines[0].equalsIgnoreCase("§a§l[Shop]")) {
-                    String[] line1 = lines[1].split(" ");
-                    String texto = line1[0];
-                    String preco = line1[1];
-                    String[] line2 = lines[2].split(" ");
-                    String idItem = line2[0];
-                    String quantidade = line2[1];
-                    String minecraftID = idItem;
-
-
                     try {
-                        if(texto == "§5Buy"){
-                            e.getPlayer().getInventory().addItem(new ItemStack(plugin.parseMat(idItem),Integer.parseInt(quantidade)));
-                            e.getPlayer().sendMessage("Compra");
-                        }else if(texto == "§5Sell"){
-                            e.getPlayer().getInventory().removeItem(new ItemStack(plugin.parseMat(idItem),Integer.parseInt(quantidade)));
-                            e.getPlayer().sendMessage("Venda");
+                        int Quantidade = Integer.parseInt(quantidade);
+                        if(idItem.contains(":")){
+                            idItemContem = true;
+                            String[] IdItem_ = idItem.split(":");
+                            idItem1 = IdItem_[0];
+                            idItem2 = Integer.parseInt(IdItem_[1]);
+                            e.getPlayer().sendMessage(idItem1+" " +idItem2);
+                        }else{
+                            idItemContem = false;
                         }
+                        if(texto.equalsIgnoreCase("§5Buy")){
+                            if(idItemContem){
+                                e.getPlayer().getInventory().addItem(new ItemStack(plugin.parseMat(idItem1),Integer.parseInt(quantidade),(byte)idItem2));
+                            }else{
+                                e.getPlayer().getInventory().addItem(new ItemStack(plugin.parseMat(idItem),Integer.parseInt(quantidade)));
+                            }
+
+                            e.getPlayer().sendMessage("§aCompra");
+                        }else if(texto.equalsIgnoreCase("§5Sell")){
+                            int nVendidos = 0;
+                            if(idItemContem) {
+                                nVendidos = removeInventoryItems(e.getPlayer().getInventory(),new ItemStack(plugin.parseMat(idItem1),(byte)idItem2),Quantidade);
+                                //e.getPlayer().sendMessage("" +;
+                                //e.getPlayer().getInventory().removeItem(new ItemStack(plugin.parseMat(idItem1),Integer.parseInt(quantidade),(byte)idItem2));
+                            }else{
+                                nVendidos = removeInventoryItems(e.getPlayer().getInventory(),new ItemStack(plugin.parseMat(idItem)),Quantidade);
+                                //e.getPlayer().getInventory().removeItem(new ItemStack(plugin.parseMat(idItem),Integer.parseInt(quantidade));
+                            }
+
+                            e.getPlayer().sendMessage("§aVendeu " + nVendidos + " itens");
+                        }
+                        System.out.print(texto);
+
 
                     }catch(NumberFormatException ev){
                         e.getPlayer().sendMessage("§cQuantidade inválida!");

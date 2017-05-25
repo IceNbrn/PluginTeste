@@ -32,7 +32,7 @@ public class color_chat_sign implements Listener {
     public void exemploPlaca(Player player){
         player.sendMessage("    §5§lExemplo da loja");
         player.sendMessage("§7shop");
-        player.sendMessage("§7buy ou seel <preço>");
+        player.sendMessage("§7buy ou sell <preço>");
         player.sendMessage("§7id item <quantidade>");
         if(player.hasPermission("mostwanted.loja.admin")){
             player.sendMessage("§7server (loja do servidor)");
@@ -110,30 +110,39 @@ public class color_chat_sign implements Listener {
 
                 if (buy) {
                     e.setLine(0, "§a§l[Shop]");
-                    e.setLine(1, "§5Buy§1 " + Preco);
+                    e.setLine(1, "§5Buy " + ChatColor.DARK_BLUE + Preco);
                     e.setLine(2, idItem + " " + Quantidade);
                     if (isServerShop) {
                         e.setLine(3, "§7(Server)");
                     } else {
-                        e.setLine(3, "§7(" + e.getPlayer().getName() + ")");
-                    }
-                    World world = e.getPlayer().getWorld();
-                    Location loc = e.getBlock().getLocation();
-                    ItemFrame itemFrame = (ItemFrame)world.spawnEntity(new Location(world,loc.getBlockX(),loc.getBlockY() + 1,loc.getBlockZ()), EntityType.ITEM_FRAME);
-                    itemFrame.setItem(new ItemStack(plugin.parseMat(idItem)));
-                } else {
-                    e.setLine(0, "§a§l[Shop]");
-                    e.setLine(1, "§5Sell§1 " + Preco);
-                    e.setLine(2, idItem + " " + Quantidade);
-                    if (isServerShop) {
-                        e.setLine(3, "§7(Server)");
-                    } else {
-                        e.setLine(3, "§7(" + e.getPlayer().getName() + ")");
+                        e.setLine(3, "§7" + e.getPlayer().getName());
                     }
                     try {
                         World world = e.getPlayer().getWorld();
                         Location loc = e.getBlock().getLocation();
-                        ItemFrame itemFrame = (ItemFrame)world.spawnEntity(new Location(world,loc.getBlockX(),loc.getBlockY() + 1,loc.getBlockZ()), EntityType.ITEM_FRAME);
+                        Location loc1 = new Location(world,loc.getBlockX(),loc.getBlockY() + 1,loc.getBlockZ());
+                        loc1.getBlock().setType(Material.AIR);
+                        ItemFrame itemFrame = (ItemFrame)world.spawnEntity(loc1, EntityType.ITEM_FRAME);
+                        itemFrame.setItem(new ItemStack(plugin.parseMat(idItem)));
+                    }catch (IllegalArgumentException ev){
+                        e.getPlayer().sendMessage("§cNão é possivel colocar o quadro com o item pois existe algo a obstruir");
+                    }
+
+                } else {
+                    e.setLine(0, "§a§l[Shop]");
+                    e.setLine(1, "§5Sell "+ ChatColor.DARK_BLUE + Preco);
+                    e.setLine(2, idItem + " " + Quantidade);
+                    if (isServerShop) {
+                        e.setLine(3, "§7(Server)");
+                    } else {
+                        e.setLine(3, "§7" + e.getPlayer().getName());
+                    }
+                    try {
+                        World world = e.getPlayer().getWorld();
+                        Location loc = e.getBlock().getLocation();
+                        Location loc1 = new Location(world,loc.getBlockX(),loc.getBlockY() + 1,loc.getBlockZ());
+                        loc1.getBlock().setType(Material.AIR);
+                        ItemFrame itemFrame = (ItemFrame)world.spawnEntity(loc1, EntityType.ITEM_FRAME);
 
                         if(idItemContem){
                             e.getPlayer().sendMessage(idItem1+" "+idItem2);
@@ -145,6 +154,8 @@ public class color_chat_sign implements Listener {
 
                     }catch (NullPointerException ev){
                         e.getPlayer().sendMessage("§cO item não existe!");
+                    }catch (IllegalArgumentException ev){
+                        e.getPlayer().sendMessage("§cNão é possivel colocar o quadro com o item pois existe algo a obstruir");
                     }
 
                 }
