@@ -2,10 +2,12 @@ package me.icendev.PluginTeste.events;
 
 import me.icendev.PluginTeste.Main;
 import net.minecraft.server.v1_11_R1.DataConverterMaterialId;
+import net.minecraft.server.v1_11_R1.MinecraftKey;
 import org.bukkit.ChatColor;
 import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.World;
+import org.bukkit.craftbukkit.v1_11_R1.inventory.CraftItemStack;
 import org.bukkit.entity.EntityType;
 import org.bukkit.entity.Item;
 import org.bukkit.entity.ItemFrame;
@@ -15,6 +17,8 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.block.SignChangeEvent;
 import org.bukkit.event.player.AsyncPlayerChatEvent;
 import org.bukkit.inventory.ItemStack;
+
+import javax.persistence.Id;
 
 /**
  * Created by Henrique on 24-05-2017.
@@ -54,8 +58,17 @@ public class color_chat_sign implements Listener {
                 String[] line2 = e.getLine(2).split(" ");
                 String idItem = line2[0];
                 String quantidade = line2[1];
+                String idItem1 = "";
+                int idItem2 = 0;
+                boolean idItemContem = false;
                 int Quantidade = 0;
                 int Preco = 0;
+                if(idItem.contains(":")){
+                    idItemContem = true;
+                    String[] IdItem_ = idItem.split(":");
+                    idItem1 = IdItem_[0];
+                    idItem2 = Integer.parseInt(IdItem_[1]);
+                }
                 try {
                     Quantidade = Integer.parseInt(quantidade);
                     Preco = Integer.parseInt(preco);
@@ -117,10 +130,23 @@ public class color_chat_sign implements Listener {
                     } else {
                         e.setLine(3, "§7(" + e.getPlayer().getName() + ")");
                     }
-                    World world = e.getPlayer().getWorld();
-                    Location loc = e.getBlock().getLocation();
-                    ItemFrame itemFrame = (ItemFrame)world.spawnEntity(new Location(world,loc.getBlockX(),loc.getBlockY() + 1,loc.getBlockZ()), EntityType.ITEM_FRAME);
-                    itemFrame.setItem(new ItemStack(plugin.parseMat(idItem)));
+                    try {
+                        World world = e.getPlayer().getWorld();
+                        Location loc = e.getBlock().getLocation();
+                        ItemFrame itemFrame = (ItemFrame)world.spawnEntity(new Location(world,loc.getBlockX(),loc.getBlockY() + 1,loc.getBlockZ()), EntityType.ITEM_FRAME);
+
+                        if(idItemContem){
+                            e.getPlayer().sendMessage(idItem1+" "+idItem2);
+                            itemFrame.setItem(new ItemStack( plugin.parseMat(idItem1),1, (byte)idItem2 ));
+                        }else{
+                            e.getPlayer().sendMessage(idItem1+" "+idItem2+".");
+                            itemFrame.setItem(new ItemStack(plugin.parseMat(idItem)));
+                        }
+
+                    }catch (NullPointerException ev){
+                        e.getPlayer().sendMessage("§cO item não existe!");
+                    }
+
                 }
 
                 p.sendMessage(ChatColor.GREEN + "A loja foi criada!");

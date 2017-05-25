@@ -54,24 +54,25 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/me/icendev/PluginTeste/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
+            <state relative-caret-position="957">
               <caret line="48" column="37" lean-forward="false" selection-start-line="48" selection-start-column="35" selection-end-line="48" selection-end-column="37" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#3557#3558#0" expanded="false" />
+                <element signature="e#3590#3591#0" expanded="false" />
+                <element signature="e#3644#3645#0" expanded="false" />
+                <element signature="e#3688#3689#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="color_chat_sign.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="color_chat_sign.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/me/icendev/PluginTeste/events/color_chat_sign.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="86">
-              <caret line="99" column="36" lean-forward="false" selection-start-line="99" selection-start-column="34" selection-end-line="99" selection-end-column="36" />
+            <state relative-caret-position="116">
+              <caret line="139" column="102" lean-forward="false" selection-start-line="139" selection-start-column="102" selection-end-line="139" selection-end-column="102" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#6222#6223#0" expanded="true" />
-                <element signature="e#6297#6298#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -80,20 +81,21 @@
       <file leaf-file-name="chatevent.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/me/icendev/PluginTeste/events/chatevent.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="919">
+            <state relative-caret-position="986">
               <caret line="41" column="37" lean-forward="false" selection-start-line="41" selection-start-column="37" selection-end-line="41" selection-end-column="37" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#3310#3311#0" expanded="false" />
+                <element signature="e#3385#3386#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="playerinteractevent.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="playerinteractevent.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/me/icendev/PluginTeste/events/playerinteractevent.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
-              <caret line="42" column="60" lean-forward="false" selection-start-line="42" selection-start-column="60" selection-end-line="42" selection-end-column="60" />
+            <state relative-caret-position="296">
+              <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -102,11 +104,9 @@
       <file leaf-file-name="cage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/me/icendev/PluginTeste/commands/cage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
+            <state relative-caret-position="348">
               <caret line="21" column="8" lean-forward="false" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="49" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -124,9 +124,11 @@
       <file leaf-file-name="playerjoinevent.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/me/icendev/PluginTeste/events/playerjoinevent.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="58">
+            <state relative-caret-position="232">
               <caret line="15" column="4" lean-forward="false" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="45" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -144,9 +146,11 @@
       <file leaf-file-name="coins.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/me/icendev/PluginTeste/commands/coins.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
+            <state relative-caret-position="2436">
               <caret line="93" column="21" lean-forward="false" selection-start-line="93" selection-start-column="21" selection-end-line="95" selection-end-column="21" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -198,8 +202,8 @@
         <option value="$PROJECT_DIR$/src/me/icendev/PluginTeste/commands/cage.java" />
         <option value="$PROJECT_DIR$/src/me/icendev/PluginTeste/events/chatevent.java" />
         <option value="$PROJECT_DIR$/src/me/icendev/PluginTeste/Main.java" />
-        <option value="$PROJECT_DIR$/src/me/icendev/PluginTeste/events/color_chat_sign.java" />
         <option value="$PROJECT_DIR$/src/me/icendev/PluginTeste/events/playerinteractevent.java" />
+        <option value="$PROJECT_DIR$/src/me/icendev/PluginTeste/events/color_chat_sign.java" />
       </list>
     </option>
   </component>
@@ -233,7 +237,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -324,6 +327,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
@@ -756,14 +760,15 @@
       <workItem from="1495567379463" duration="3539000" />
       <workItem from="1495575968522" duration="1802000" />
       <workItem from="1495614561253" duration="21029000" />
+      <workItem from="1495705944826" duration="7897000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66982000" />
+    <option name="totallyTimeSpent" value="74879000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1552" height="840" extended-state="6" />
+    <frame x="-8" y="-8" width="1552" height="840" extended-state="7" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -780,7 +785,7 @@
       <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32892805" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1816354" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18364611" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20375335" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -859,7 +864,8 @@
         <state relative-caret-position="58">
           <caret line="2" column="28" lean-forward="false" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#3310#3311#0" expanded="false" />
+            <element signature="e#3385#3386#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -876,9 +882,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="696">
           <caret line="24" column="57" lean-forward="false" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -894,7 +898,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1972">
           <caret line="75" column="9" lean-forward="true" selection-start-line="22" selection-start-column="8" selection-end-line="75" selection-end-column="9" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -910,7 +916,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1305">
           <caret line="54" column="13" lean-forward="false" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -918,18 +926,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2784">
           <caret line="105" column="90" lean-forward="false" selection-start-line="105" selection-start-column="90" selection-end-line="105" selection-end-column="90" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <marker date="1495544008523" expanded="true" signature="761:816" ph="INSERT INTO player... " />
-            <marker date="1495544008523" expanded="true" signature="1216:1252" ph="SELECT * FRO... players" />
-            <marker date="1495544008523" expanded="true" signature="1556:1611" ph="INSERT INTO player... " />
-            <marker date="1495544008523" expanded="true" signature="2197:2231" ph="SELECT * FRO... players" />
-            <marker date="1495544008523" expanded="true" signature="2873:2914" ph="UPDATE playe... " />
-            <marker date="1495544008523" expanded="true" signature="3311:3360" ph="UPDATE playe... " />
-            <marker date="1495544008523" expanded="true" signature="3617:3666" ph="UPDATE playe... " />
-            <marker date="1495544008523" expanded="true" signature="4167:4219" ph="SELECT * FRO... players" />
-            <marker date="1495544008523" expanded="true" signature="4694:4728" ph="SELECT * FRO... missingValue" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -938,7 +934,10 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#3557#3558#0" expanded="false" />
+            <element signature="e#3590#3591#0" expanded="false" />
+            <element signature="e#3644#3645#0" expanded="false" />
+            <element signature="e#3688#3689#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -963,9 +962,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="696">
           <caret line="24" column="57" lean-forward="false" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -981,7 +978,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="174">
           <caret line="6" column="32" lean-forward="true" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -997,7 +996,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="870">
           <caret line="30" column="34" lean-forward="false" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1005,18 +1006,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2784">
           <caret line="105" column="90" lean-forward="false" selection-start-line="105" selection-start-column="90" selection-end-line="105" selection-end-column="90" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <marker date="1495544008523" expanded="true" signature="761:816" ph="INSERT INTO player... " />
-            <marker date="1495544008523" expanded="true" signature="1216:1252" ph="SELECT * FRO... players" />
-            <marker date="1495544008523" expanded="true" signature="1556:1611" ph="INSERT INTO player... " />
-            <marker date="1495544008523" expanded="true" signature="2197:2231" ph="SELECT * FRO... players" />
-            <marker date="1495544008523" expanded="true" signature="2873:2914" ph="UPDATE playe... " />
-            <marker date="1495544008523" expanded="true" signature="3311:3360" ph="UPDATE playe... " />
-            <marker date="1495544008523" expanded="true" signature="3617:3666" ph="UPDATE playe... " />
-            <marker date="1495544008523" expanded="true" signature="4167:4219" ph="SELECT * FRO... players" />
-            <marker date="1495544008523" expanded="true" signature="4694:4728" ph="SELECT * FRO... missingValue" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1032,7 +1021,10 @@
         <state relative-caret-position="638">
           <caret line="33" column="47" lean-forward="false" selection-start-line="33" selection-start-column="47" selection-end-line="33" selection-end-column="47" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#3557#3558#0" expanded="false" />
+            <element signature="e#3590#3591#0" expanded="false" />
+            <element signature="e#3644#3645#0" expanded="false" />
+            <element signature="e#3688#3689#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1041,7 +1033,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="406">
           <caret line="14" column="33" lean-forward="false" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1065,18 +1059,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2639">
           <caret line="103" column="29" lean-forward="true" selection-start-line="103" selection-start-column="20" selection-end-line="103" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <marker date="1495544008523" expanded="true" signature="761:816" ph="INSERT INTO player... " />
-            <marker date="1495544008523" expanded="true" signature="1216:1252" ph="SELECT * FRO... players" />
-            <marker date="1495544008523" expanded="true" signature="1556:1611" ph="INSERT INTO player... " />
-            <marker date="1495544008523" expanded="true" signature="2197:2231" ph="SELECT * FRO... players" />
-            <marker date="1495544008523" expanded="true" signature="2873:2914" ph="UPDATE playe... " />
-            <marker date="1495544008523" expanded="true" signature="3311:3360" ph="UPDATE playe... " />
-            <marker date="1495544008523" expanded="true" signature="3617:3666" ph="UPDATE playe... " />
-            <marker date="1495544008523" expanded="true" signature="4167:4219" ph="SELECT * FRO... players" />
-            <marker date="1495544008523" expanded="true" signature="4694:4728" ph="SELECT * FRO... missingValue" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1084,7 +1066,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="203">
           <caret line="14" column="45" lean-forward="true" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="45" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1095,7 +1079,10 @@
         <state relative-caret-position="435">
           <caret line="26" column="27" lean-forward="false" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#3557#3558#0" expanded="false" />
+            <element signature="e#3590#3591#0" expanded="false" />
+            <element signature="e#3644#3645#0" expanded="false" />
+            <element signature="e#3688#3689#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1120,18 +1107,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="783">
           <caret line="27" column="13" lean-forward="true" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <marker date="1495544008523" expanded="true" signature="761:816" ph="INSERT INTO player... " />
-            <marker date="1495544008523" expanded="true" signature="1216:1252" ph="SELECT * FRO... players" />
-            <marker date="1495544008523" expanded="true" signature="1556:1611" ph="INSERT INTO player... " />
-            <marker date="1495544008523" expanded="true" signature="2197:2231" ph="SELECT * FRO... players" />
-            <marker date="1495544008523" expanded="true" signature="2873:2914" ph="UPDATE playe... " />
-            <marker date="1495544008523" expanded="true" signature="3311:3360" ph="UPDATE playe... " />
-            <marker date="1495544008523" expanded="true" signature="3617:3666" ph="UPDATE playe... " />
-            <marker date="1495544008523" expanded="true" signature="4167:4219" ph="SELECT * FRO... players" />
-            <marker date="1495544008523" expanded="true" signature="4694:4728" ph="SELECT * FRO... missingValue" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1140,7 +1115,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="377">
           <caret line="20" column="8" lean-forward="false" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1165,18 +1142,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2784">
           <caret line="105" column="90" lean-forward="false" selection-start-line="105" selection-start-column="90" selection-end-line="105" selection-end-column="90" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <marker date="1495544008523" expanded="true" signature="761:816" ph="INSERT INTO player... " />
-            <marker date="1495544008523" expanded="true" signature="1216:1252" ph="SELECT * FRO... players" />
-            <marker date="1495544008523" expanded="true" signature="1556:1611" ph="INSERT INTO player... " />
-            <marker date="1495544008523" expanded="true" signature="2197:2231" ph="SELECT * FRO... players" />
-            <marker date="1495544008523" expanded="true" signature="2873:2914" ph="UPDATE playe... " />
-            <marker date="1495544008523" expanded="true" signature="3311:3360" ph="UPDATE playe... " />
-            <marker date="1495544008523" expanded="true" signature="3617:3666" ph="UPDATE playe... " />
-            <marker date="1495544008523" expanded="true" signature="4167:4219" ph="SELECT * FRO... players" />
-            <marker date="1495544008523" expanded="true" signature="4694:4728" ph="SELECT * FRO... missingValue" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1204,46 +1169,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/me/icendev/PluginTeste/events/onplayermove.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="18" column="39" lean-forward="false" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/me/icendev/PluginTeste/events/onplayermove.java" />
     <entry file="file://$PROJECT_DIR$/src/me/icendev/PluginTeste/events/playerjoinevent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="58">
+        <state relative-caret-position="232">
           <caret line="15" column="4" lean-forward="false" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="45" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/me/icendev/PluginTeste/commands/coins.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
+        <state relative-caret-position="2436">
           <caret line="93" column="21" lean-forward="false" selection-start-line="93" selection-start-column="21" selection-end-line="95" selection-end-column="21" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/me/icendev/PluginTeste/commands/cage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
+        <state relative-caret-position="348">
           <caret line="21" column="8" lean-forward="false" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/me/icendev/PluginTeste/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
+        <state relative-caret-position="957">
           <caret line="48" column="37" lean-forward="false" selection-start-line="48" selection-start-column="35" selection-end-line="48" selection-end-column="37" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#3557#3558#0" expanded="false" />
+            <element signature="e#3590#3591#0" expanded="false" />
+            <element signature="e#3644#3645#0" expanded="false" />
+            <element signature="e#3688#3689#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1256,33 +1219,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/me/icendev/PluginTeste/events/color_chat_sign.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="86">
-          <caret line="99" column="36" lean-forward="false" selection-start-line="99" selection-start-column="34" selection-end-line="99" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#6222#6223#0" expanded="true" />
-            <element signature="e#6297#6298#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/me/icendev/PluginTeste/events/chatevent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="919">
+        <state relative-caret-position="986">
           <caret line="41" column="37" lean-forward="false" selection-start-line="41" selection-start-column="37" selection-end-line="41" selection-end-column="37" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#3310#3311#0" expanded="false" />
+            <element signature="e#3385#3386#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/me/icendev/PluginTeste/events/playerinteractevent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="42" column="60" lean-forward="false" selection-start-line="42" selection-start-column="60" selection-end-line="42" selection-end-column="60" />
+        <state relative-caret-position="296">
+          <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/me/icendev/PluginTeste/events/color_chat_sign.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="139" column="102" lean-forward="false" selection-start-line="139" selection-start-column="102" selection-end-line="139" selection-end-column="102" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
